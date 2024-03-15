@@ -10,8 +10,18 @@ import product2 from "../assets/k9.jpg";
 import product3 from "../assets/k6.jpg";
 import product4 from "../assets/k7.jpg";
 import product5 from "../assets/k5.jpg";
+import product6 from "../assets/br.jpg";
+import product7 from "../assets/cd.jpg";
+import product8 from "../assets/ovn.jpg";
+import product9 from "../assets/tnk.jpg";
 
 const Home = () => {
+  const products = [
+    { image: product6, description: "Mandhi" },
+    { image: product7, description: "Shaway New" },
+    { image: product8, description: "Stove Big" },
+    { image: product9, description: "Shawarma Shaway" },
+  ];
   const settings = {
     // dots: true,
     infinite: true,
@@ -30,42 +40,53 @@ const Home = () => {
         SOME OF OUR KITCHEN
       </h4>
       <Slider {...settings}>
-        <div className="w-full h-full">
+        <div className="w-full h-96">
           <img
-            className="w-full h-full object-cover px-4 transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full h-96 object-cover px-4 "
             src={product1}
             alt="Product 1"
           />
         </div>
         <div>
           <img
-            className="w-full h-full  object-cover px-4 transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full h-96  object-cover px-4"
             src={product2}
             alt="Product 2"
           />
         </div>
         <div>
           <img
-            className="w-full h-full  object-cover px-4 transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full h-96  object-cover px-4 "
             src={product3}
             alt="Product 3"
           />
         </div>
         <div>
           <img
-            className="w-full h-full  object-cover px-4 transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full h-96  object-cover px-4"
             src={product4}
             alt="Product 4"
           />
         </div>
-        <div>
+        <div className="mt-20 justify-center ">
           <img
-            className="w-full h-full object-cover px-4 transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full h-96 object-cover px-4"
             src={product5}
             alt="Product 5"
           />
         </div>
       </Slider>
+      <div className="flex justify-center">
+        {/* <Slider {...settings}> */}
+        {products.map((product, index) => (
+          <ProductCard
+            key={index}
+            image={product.image}
+            description={product.description}
+          />
+        ))}
+        {/* </Slider> */}
+      </div>
     </div>
   );
 };

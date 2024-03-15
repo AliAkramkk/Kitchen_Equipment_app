@@ -26,7 +26,7 @@ const HomeCard = () => {
           <img
             src={homecard}
             alt="Your Image"
-            className="w-100 h-96  transition duration-300 ease-in-out transform hover:scale-105 rounded-lg shadow-black bg-current"
+            className="w-100 h-96   rounded-lg shadow-black bg-current"
           />
         </div>
       </div>

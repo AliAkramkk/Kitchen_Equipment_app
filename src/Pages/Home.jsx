@@ -9,7 +9,7 @@ import product1 from "../assets/mandhi.jpg";
 import product2 from "../assets/k9.jpg";
 import product3 from "../assets/k6.jpg";
 import product4 from "../assets/k7.jpg";
-import product5 from "../assets/k5.jpg";
+import product5 from "../assets/stove big.jpg";
 import product6 from "../assets/br.jpg";
 import product7 from "../assets/cd.jpg";
 import product8 from "../assets/ovn.jpg";
@@ -68,13 +68,13 @@ const Home = () => {
             alt="Product 4"
           />
         </div>
-        <div className="mt-20 justify-center ">
+        {/* <div className="mt-20 justify-center ">
           <img
             className="w-full h-96 object-cover px-4"
             src={product5}
             alt="Product 5"
           />
-        </div>
+        </div> */}
       </Slider>
       <div className="flex justify-center">
         {/* <Slider {...settings}> */}

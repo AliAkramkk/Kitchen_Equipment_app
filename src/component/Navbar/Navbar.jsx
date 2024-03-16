@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Spin as Hamburger } from "hamburger-react";
+import logo from "../../assets/lo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -24,7 +25,17 @@ const Navbar = () => {
             to="/"
             className="text-white text-2xl font-bold hover:text-black"
           >
-            Let's Cook
+            <a
+              href="#"
+              className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src={logo}
+                className="h-34 w-34 transition duration-300 ease-in-out transform hover:scale-105"
+                alt="Your Logo"
+                style={{ cursor: "pointer" }}
+              />
+            </a>
           </Link>
         </div>
         <div className="hidden md:flex space-x-4">
@@ -33,15 +44,21 @@ const Navbar = () => {
             {/* Added flex container */}
             <Link
               to="/"
-              className="text-gray-500 lg:mb-0 font-semibold dark:text-gray-400 hover:underline me-4 md:me-6"
+              className="text-gray-500 lg:mb-0  dark:text-gray-400 hover:underline me-4 md:me-6 hvr-underline-from-center  hover:transform hover:shadow-2xl transition-transform duration-300 hover:bg-gray hover:animate-shake font-bold "
             >
               HOME
             </Link>
             <Link
-              to="/all-courses"
-              className="text-gray-500 lg:mb-0 font-semibold dark:text-gray-400 hover:underline me-4 md:me-6"
+              to="/"
+              className="text-gray-500 lg:mb-0  dark:text-gray-400 hover:underline me-4 md:me-6 hvr-underline-from-center  hover:transform hover:shadow-2xl transition-transform duration-300 hover:bg-gray hover:animate-shake font-bold "
             >
-              COURSES
+              ABOUT
+            </Link>
+            <Link
+              to="/"
+              className="text-gray-500 lg:mb-0  dark:text-gray-400 hover:underline me-4 md:me-6 hvr-underline-from-center  hover:transform hover:shadow-2xl transition-transform duration-300 hover:bg-gray hover:animate-shake font-bold "
+            >
+              CONTACT
             </Link>
           </div>
           {/* Add more links as needed */}

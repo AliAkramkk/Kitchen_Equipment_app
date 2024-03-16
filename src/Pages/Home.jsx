@@ -23,20 +23,24 @@ import product15 from "../assets/k19.jpg";
 import product16 from "../assets/k20.jpg";
 import product17 from "../assets/k21.jpg";
 import product18 from "../assets/images.png";
+import product19 from "../assets/kitchn.png";
+import product20 from "../assets/supply.png";
+import product21 from "../assets/qlity.png";
+import Footer from "../component/Footer/Footer";
 
 const Home = () => {
   const products = [
-    { image: product6, description: "Mandhi" },
+    { image: product6, description: "Toaster" },
     { image: product7, description: "Conveyor-Dishwasher" },
     { image: product8, description: "Oven" },
-    { image: product9, description: "Shawarma Shaway" },
-    { image: product13, description: "Three Deck Baking Oven" },
-    { image: product10, description: "Shawarma Shaway" },
-    { image: product11, description: "Wash Equipment" },
-    { image: product12, description: "Drain borad glass" },
+    { image: product9, description: "Fried Special" },
+    // { image: product10, description: "Shawarma Shaway" },
+    // { image: product15, description: "3 Large LED" },
     { image: product14, description: "4th gen pan" },
-    { image: product15, description: "3 Large LED" },
-    { image: product16, description: "Exhaust Fan" },
+    { image: product12, description: "Drain borad glass" },
+    // { image: product11, description: "Wash Equipment" },
+    { image: product13, description: "Three Deck Baking Oven" },
+    // { image: product16, description: "Exhaust Fan" },
     { image: product17, description: "Dish Washer" },
   ];
   const settings = {
@@ -56,6 +60,18 @@ const Home = () => {
     <div className="bg-gray-100">
       <Navbar />
       <HomeCard />
+      <h1 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
+        OUR PRODUCTS
+      </h1>
+      <div className="flex justify-center flex-wrap gap-8 mt-8">
+        {products.map((product, index) => (
+          <ProductCard
+            key={index}
+            image={product.image}
+            description={product.description}
+          />
+        ))}
+      </div>
       <h4 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
         SOME OF OUR KITCHENS
       </h4>
@@ -89,68 +105,86 @@ const Home = () => {
           />
         </div>
       </Slider>
-      <h1
-        className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center"
-        style={cardStyle3}
-      >
-        OUR PRODUCTS
-      </h1>
-      <div
-        className="flex justify-center flex-wrap gap-8 mt-8"
-        style={cardStyle3}
-      >
-        {products.map((product, index) => (
-          <ProductCard
-            key={index}
-            image={product.image}
-            description={product.description}
-          />
-        ))}
-      </div>
-      <h1
-        className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center"
-        style={cardStyle3}
-      >
+      <h1 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
         OUR VISION
       </h1>
+      <div className="flex justify-center gap-4 md:gap-8 flex-wrap">
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-bg-white-01 dark:border-gray-700 m-8 custom-shadow-bg-white">
+          <img
+            src={product18}
+            alt="Product 18"
+            className="w-16 h-16 rounded-full object-cover mb-3"
+          />
 
-      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <img
-          src={product18}
-          alt="Product 18"
-          className="w-16 h-16 rounded-full object-cover mb-3"
-        />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            INSTALLATION
+          </h5>
 
-        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-          Need help with a Claim?
-        </h5>
+          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            QS Gas Safe commercial catering engineers ensure that your kitchen
+            is installed and commissioned safely and effectively. Your dedicated
+            QS project manager will be on hand to oversee installation and
+            ensure that everything runs smoothly and to your satisfaction
+          </p>
+        </div>
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-bg-white-01 dark:border-gray-700 m-8 custom-shadow-bg-white">
+          <img
+            src={product19}
+            alt="Product 18"
+            className="w-16 h-16 rounded-full object-cover mb-3"
+          />
 
-        <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-          Follow our step-by-step guidelines on how to certify for your weekly
-          benefits:
-        </p>
-        {/* <a
-          href="#"
-          className="inline-flex font-medium items-center text-blue-600 hover:underline"
-        >
-          See our guidelines
-          <svg
-            className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-            />
-          </svg>
-        </a> */}
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            KITCHEN SOLUTIONS
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            QS is specialists in the design, supply and installation of
+            commercial kitchens to clients ranging from small café’s, care
+            homes, large restaurants, production kitchens, Industrial Kitchen,
+            Central Kitchens, Hotel kitchens & Corporate kitchens.
+          </p>
+        </div>
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-bg-white-01 dark:border-gray-700 m-8 custom-shadow-bg-white">
+          <img
+            src={product20}
+            alt="Product 18"
+            className="w-16 h-16 rounded-full object-cover mb-3"
+          />
+
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            SUPPLY
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            QS is specialists in the design, supply and installation of
+            commercial kitchens to clients ranging from small café’s, care
+            homes, large restaurants, production kitchens, Industrial Kitchen,
+            Central Kitchens, Hotel kitchens & Corporate kitchens.
+          </p>
+        </div>
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-bg-white-01 dark:border-gray-700 m-8 custom-shadow-bg-white">
+          <img
+            src={product21}
+            alt="Product 18"
+            className="w-16 h-16 rounded-full object-cover mb-3"
+          />
+
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            QUALITY
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            QS specializes in ensuring the quality and reliability of every
+            aspect of commercial kitchen design, supply, and installation. Our
+            expertise extends to a diverse clientele, including small cafes,
+            care homes, expansive restaurants, production kitchens, industrial
+            facilities, central kitchens, hotel establishments, and corporate
+            facilities.
+          </p>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

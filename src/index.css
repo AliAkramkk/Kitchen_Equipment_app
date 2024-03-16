@@ -13,6 +13,10 @@ html {
   box-sizing: inherit;
 }
 
+.custom-shadow-bg-white {
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

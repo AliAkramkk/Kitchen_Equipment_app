@@ -49,13 +49,13 @@ const Navbar = () => {
               HOME
             </Link>
             <Link
-              to="/"
+              to="/about"
               className="text-gray-500 lg:mb-0  dark:text-gray-400 hover:underline me-4 md:me-6 hvr-underline-from-center  hover:transform hover:shadow-2xl transition-transform duration-300 hover:bg-gray hover:animate-shake font-bold "
             >
               ABOUT
             </Link>
             <Link
-              to="/"
+              to="/contact"
               className="text-gray-500 lg:mb-0  dark:text-gray-400 hover:underline me-4 md:me-6 hvr-underline-from-center  hover:transform hover:shadow-2xl transition-transform duration-300 hover:bg-gray hover:animate-shake font-bold "
             >
               CONTACT

@@ -16,7 +16,7 @@ const HomeCard = () => {
               PURCHASE YOUR FAVOURITE <br />
               BUILD YOUR BRIGHT CAREER.
             </h1>
-            <h3 className="font-medium text-gray-800 mb-4 mt-10 ml-10">
+            <h3 className="font-serif text-2xl mb-4 mt-10 ml-10">
               TRUSTED OVER 15K CUSTOMERS
             </h3>
           </div>

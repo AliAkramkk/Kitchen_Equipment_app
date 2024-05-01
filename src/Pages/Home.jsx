@@ -5,59 +5,74 @@ import ProductCard from "../component/Card/ProductCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import product1 from "../assets/mandhi.jpg";
-import product2 from "../assets/k9.jpg";
-import product3 from "../assets/k6.jpg";
-import product4 from "../assets/k7.jpg";
-import product5 from "../assets/stove big.jpg";
-import product6 from "../assets/br.jpg";
-import product7 from "../assets/cd.jpg";
-import product8 from "../assets/ovn.jpg";
-import product9 from "../assets/tnk.jpg";
-import product10 from "../assets/shawarma shaway.jpg";
-import product11 from "../assets/k15.jpg";
-import product12 from "../assets/k16.jpg";
-import product13 from "../assets/k17.jpg";
-import product14 from "../assets/k18.jpg";
-import product15 from "../assets/k19.jpg";
-import product16 from "../assets/k20.jpg";
-import product17 from "../assets/k21.jpg";
-import product18 from "../assets/images.png";
-import product19 from "../assets/kitchn.png";
-import product20 from "../assets/supply.png";
-import product21 from "../assets/qlity.png";
+import product1 from "../assets/car1.jpg";
+import product2 from "../assets/car2.jpg";
+import product3 from "../assets/caro3.jpg";
+import product4 from "../assets/caro4.jpg";
+import product5 from "../assets/cofee.jpg";
+import product6 from "../assets/cofee.jpg";
+import product7 from "../assets/comercialRefrigerator.webp";
+import product8 from "../assets/oven.jpg";
+import product9 from "../assets/dishwashers.png";
+import product10 from "../assets/cofee.jpg";
+import product11 from "../assets/cofee.jpg";
+import product12 from "../assets/commercialBeverage.webp";
+import product13 from "../assets/iceCreammachine.webp";
+import product14 from "../assets/commercialCooking.webp";
+import product15 from "../assets/cofee.jpg";
+import product16 from "../assets/cofee.jpg";
+import product17 from "../assets/washtable.png";
+import product18 from "../assets/installation.jpg";
+import product19 from "../assets/cofee.jpg";
+import product20 from "../assets/cofee.jpg";
+import product21 from "../assets/cofee.jpg";
 import Footer from "../component/Footer/Footer";
 
 const Home = () => {
   const products = [
     { image: product6, description: "Toaster" },
-    { image: product7, description: "Conveyor-Dishwasher" },
+    { image: product7, description: "Comercial Refrigerator" },
     { image: product8, description: "Oven" },
-    { image: product9, description: "Fried Special" },
+    { image: product9, description: "Dish Washer" },
     // { image: product10, description: "Shawarma Shaway" },
     // { image: product15, description: "3 Large LED" },
-    { image: product14, description: "4th gen pan" },
-    { image: product12, description: "Drain borad glass" },
+    { image: product14, description: "Commercial Cooking" },
+    { image: product12, description: "Commercial Beverage" },
     // { image: product11, description: "Wash Equipment" },
-    { image: product13, description: "Three Deck Baking Oven" },
+    { image: product13, description: "Ice Cream Machine" },
     // { image: product16, description: "Exhaust Fan" },
     { image: product17, description: "Dish Washer" },
   ];
   const settings = {
     // dots: true,
+    dots: true,
     infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
+    speed: 2000,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   const cardStyle3 = {
     background:
       "linear-gradient(to right, hsl(210, 60%, 95%), hsl(0, 60%, 95%), hsl(60, 100%, 95%))",
   };
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <Navbar />
       <HomeCard />
       <h1 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
@@ -72,39 +87,28 @@ const Home = () => {
           />
         ))}
       </div>
+      <div>
       <h4 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
         SOME OF OUR KITCHENS
       </h4>
-      <Slider {...settings}>
-        <div className="w-full h-96">
-          <img
-            className="w-full h-full object-cover px-4"
-            src={product1}
-            alt="Product 1"
-          />
+      <div className="slider-container p-4">
+          <Slider {...settings}>
+            <div>
+              <img src={product1} alt="Product 1"  className="h-80 w-80 object-auto rounded-lg"/>
+            </div>
+            <div>
+              <img src={product2} alt="Product 2"  className="h-80 w-80 object-auto rounded-lg"/>
+            </div>
+            <div>
+              <img src={product3} alt="Product 3"  className="h-80 w-80 object-auto rounded-lg"/>
+            </div>
+            <div>
+              <img src={product4} alt="Product 4"
+              className="h-80 w-80 object-auto rounded-lg" />
+            </div>
+          </Slider>
         </div>
-        <div className="w-full h-96">
-          <img
-            className="w-full h-full object-cover px-4"
-            src={product2}
-            alt="Product 2"
-          />
-        </div>
-        <div className="w-full h-96">
-          <img
-            className="w-full h-full object-cover px-4"
-            src={product3}
-            alt="Product 3"
-          />
-        </div>
-        <div className="w-full h-96">
-          <img
-            className="w-full h-full object-cover px-4"
-            src={product4}
-            alt="Product 4"
-          />
-        </div>
-      </Slider>
+    </div>
       <h1 className="text-4xl font-sans text-gray-800 mb-4 mt-8 text-center">
         OUR VISION
       </h1>

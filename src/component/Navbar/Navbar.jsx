@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Spin as Hamburger } from "hamburger-react";
-import logo from "../../assets/lo.png";
+// import logo from "../../assets/cofee.jpg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -29,12 +29,12 @@ const Navbar = () => {
               href="#"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <img
+              {/* <img
                 src={logo}
                 className="h-34 w-34 transition duration-300 ease-in-out transform hover:scale-105"
                 alt="Your Logo"
                 style={{ cursor: "pointer" }}
-              />
+              /> */}
             </a>
           </Link>
         </div>

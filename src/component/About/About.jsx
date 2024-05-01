@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import backgroundImage from "../../assets/k12.jpg";
+import backgroundImage from "../../assets/oven.jpg";
 import Footer from "../Footer/Footer";
 const About = () => {
   return (

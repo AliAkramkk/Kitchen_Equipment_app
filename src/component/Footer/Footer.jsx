@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/lo.png";
-import whatsappIcon from "../../assets/wtsap.png";
-import phoneIcon from "../../assets/phone.png";
+import logo from "../../assets/cofee.jpg";
+import whatsappIcon from "../../assets/cofee.jpg";
+import phoneIcon from "../../assets/cofee.jpg";
 
 const Footer = () => {
   const footerStyle = {

@@ -1,12 +1,12 @@
 import React from "react";
 import ContactCard from "../Card/ContactCard";
-import backgroundImage from "../../assets/k12.jpg";
+import backgroundImage from "../../assets/cofee.jpg";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 const Contact = () => {
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="">
         <Navbar />
         <div
           className="min-h-screen flex flex-col  items-center justify-center bg-cover bg-center"

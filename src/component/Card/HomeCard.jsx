@@ -8,15 +8,15 @@ const HomeCard = () => {
           <div>
             <h1 className="text-2xl font-bold text-gray-800 mb-4 ">
               "Expertly Crafted Commercial Kitchen Equipment”
-              <br />
-              <span className="text-lg text-gray-700 ml-4 p-3"></span>
+              {/* <br />
+              <span className="text-lg text-gray-700 ml-4 p-3"></span> */}
             </h1>
 
-            <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-4">
+            <h1 className="text-4xl font-bold text-lime-950 mb-4 mt-4">
               PURCHASE YOUR FAVOURITE <br />
               BUILD YOUR BRIGHT CAREER.
             </h1>
-            <h3 className="font-serif text-2xl mb-4 mt-10 ml-10">
+            <h3 className="font-serif text-2xl text-orange-400 mb-4 mt-10 ml-10">
               TRUSTED OVER 15K CUSTOMERS
             </h3>
           </div>
@@ -26,7 +26,7 @@ const HomeCard = () => {
           <img
             src={homecard}
             alt="Your Image"
-            className="w-100 h-96   rounded-lg shadow-black bg-current"
+            className="w-100 h-96   shadow-black bg-current"
           />
         </div>
       </div>
